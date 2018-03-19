@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7F1D747723DA3CD0F89B91E /* libPods-WaterMarkExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED62A902ED04018A700A9DB1 /* libPods-WaterMarkExample.a */; };
+		F2E3F5C1205F6F6E002CB344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F5C0205F6F6E002CB344 /* AppDelegate.m */; };
+		F2E3F5C4205F6F6E002CB344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F5C3205F6F6E002CB344 /* ViewController.m */; };
+		F2E3F5C7205F6F6E002CB344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5C5205F6F6E002CB344 /* Main.storyboard */; };
+		F2E3F5C9205F6F6E002CB344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5C8205F6F6E002CB344 /* Assets.xcassets */; };
+		F2E3F5CC205F6F6E002CB344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5CA205F6F6E002CB344 /* LaunchScreen.storyboard */; };
+		F2E3F5CF205F6F6E002CB344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F5CE205F6F6E002CB344 /* main.m */; };
+		F2E3F5D7205F71C8002CB344 /* WatermarkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F5D6205F71C8002CB344 /* WatermarkEngine.m */; };
+		F2E3F5D9205F75B3002CB344 /* inputResources.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5D8205F75B2002CB344 /* inputResources.mp4 */; };
+		F2E3F5DB205F8A3D002CB344 /* 青蛙.json in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5DA205F8A3D002CB344 /* 青蛙.json */; };
+		F2E3F5DD205F8CEC002CB344 /* 雪人完成_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5DC205F8CEC002CB344 /* 雪人完成_1.gif */; };
+		F2E3F5DF205F8EEC002CB344 /* 测试zhouzhou.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5DE205F8EEC002CB344 /* 测试zhouzhou.mp4 */; };
+		F2E3F63C205F92B6002CB344 /* 雨天青蛙_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E2205F92B5002CB344 /* 雨天青蛙_00013.png */; };
+		F2E3F63D205F92B6002CB344 /* 雨天青蛙_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E3205F92B5002CB344 /* 雨天青蛙_00007.png */; };
+		F2E3F63E205F92B6002CB344 /* 雨天青蛙_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E4205F92B5002CB344 /* 雨天青蛙_00006.png */; };
+		F2E3F63F205F92B6002CB344 /* 雨天青蛙_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E5205F92B5002CB344 /* 雨天青蛙_00012.png */; };
+		F2E3F640205F92B6002CB344 /* 雨天青蛙_00038.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E6205F92B5002CB344 /* 雨天青蛙_00038.png */; };
+		F2E3F641205F92B6002CB344 /* 雨天青蛙_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E7205F92B5002CB344 /* 雨天青蛙_00004.png */; };
+		F2E3F642205F92B6002CB344 /* 雨天青蛙_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E8205F92B5002CB344 /* 雨天青蛙_00010.png */; };
+		F2E3F643205F92B6002CB344 /* 雨天青蛙_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5E9205F92B5002CB344 /* 雨天青蛙_00011.png */; };
+		F2E3F644205F92B6002CB344 /* 雨天青蛙_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5EA205F92B5002CB344 /* 雨天青蛙_00005.png */; };
+		F2E3F645205F92B6002CB344 /* 雨天青蛙_00039.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5EB205F92B5002CB344 /* 雨天青蛙_00039.png */; };
+		F2E3F646205F92B6002CB344 /* 雨天青蛙_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5EC205F92B5002CB344 /* 雨天青蛙_00001.png */; };
+		F2E3F647205F92B6002CB344 /* 雨天青蛙_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5ED205F92B5002CB344 /* 雨天青蛙_00015.png */; };
+		F2E3F648205F92B6002CB344 /* 雨天青蛙_00029.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5EE205F92B5002CB344 /* 雨天青蛙_00029.png */; };
+		F2E3F649205F92B6002CB344 /* 雨天青蛙_00028.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5EF205F92B5002CB344 /* 雨天青蛙_00028.png */; };
+		F2E3F64A205F92B6002CB344 /* 雨天青蛙_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F0205F92B5002CB344 /* 雨天青蛙_00014.png */; };
+		F2E3F64B205F92B6002CB344 /* 雨天青蛙_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F1205F92B5002CB344 /* 雨天青蛙_00000.png */; };
+		F2E3F64C205F92B6002CB344 /* 雨天青蛙_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F2205F92B5002CB344 /* 雨天青蛙_00016.png */; };
+		F2E3F64D205F92B6002CB344 /* 雨天青蛙_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F3205F92B5002CB344 /* 雨天青蛙_00002.png */; };
+		F2E3F64E205F92B6002CB344 /* 雨天青蛙_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F4205F92B5002CB344 /* 雨天青蛙_00003.png */; };
+		F2E3F64F205F92B6002CB344 /* 雨天青蛙_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F5205F92B5002CB344 /* 雨天青蛙_00017.png */; };
+		F2E3F650205F92B6002CB344 /* 雨天青蛙_00058.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F6205F92B5002CB344 /* 雨天青蛙_00058.png */; };
+		F2E3F651205F92B6002CB344 /* 雨天青蛙_00070.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F7205F92B5002CB344 /* 雨天青蛙_00070.png */; };
+		F2E3F652205F92B6002CB344 /* 雨天青蛙_00064.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F8205F92B5002CB344 /* 雨天青蛙_00064.png */; };
+		F2E3F653205F92B6002CB344 /* 雨天青蛙_00065.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5F9205F92B5002CB344 /* 雨天青蛙_00065.png */; };
+		F2E3F654205F92B6002CB344 /* 雨天青蛙_00071.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FA205F92B5002CB344 /* 雨天青蛙_00071.png */; };
+		F2E3F655205F92B6002CB344 /* 雨天青蛙_00059.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FB205F92B5002CB344 /* 雨天青蛙_00059.png */; };
+		F2E3F656205F92B6002CB344 /* 雨天青蛙_00067.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FC205F92B6002CB344 /* 雨天青蛙_00067.png */; };
+		F2E3F657205F92B6002CB344 /* 雨天青蛙_00073.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FD205F92B6002CB344 /* 雨天青蛙_00073.png */; };
+		F2E3F658205F92B6002CB344 /* 雨天青蛙_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FE205F92B6002CB344 /* 雨天青蛙_00072.png */; };
+		F2E3F659205F92B6002CB344 /* 雨天青蛙_00066.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F5FF205F92B6002CB344 /* 雨天青蛙_00066.png */; };
+		F2E3F65A205F92B6002CB344 /* 雨天青蛙_00062.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F600205F92B6002CB344 /* 雨天青蛙_00062.png */; };
+		F2E3F65B205F92B6002CB344 /* 雨天青蛙_00076.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F601205F92B6002CB344 /* 雨天青蛙_00076.png */; };
+		F2E3F65C205F92B6002CB344 /* 雨天青蛙_00089.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F602205F92B6002CB344 /* 雨天青蛙_00089.png */; };
+		F2E3F65D205F92B6002CB344 /* 雨天青蛙_00088.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F603205F92B6002CB344 /* 雨天青蛙_00088.png */; };
+		F2E3F65E205F92B6002CB344 /* 雨天青蛙_00077.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F604205F92B6002CB344 /* 雨天青蛙_00077.png */; };
+		F2E3F65F205F92B6002CB344 /* 雨天青蛙_00063.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F605205F92B6002CB344 /* 雨天青蛙_00063.png */; };
+		F2E3F660205F92B6002CB344 /* 雨天青蛙_00075.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F606205F92B6002CB344 /* 雨天青蛙_00075.png */; };
+		F2E3F661205F92B6002CB344 /* 雨天青蛙_00061.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F607205F92B6002CB344 /* 雨天青蛙_00061.png */; };
+		F2E3F662205F92B6002CB344 /* 雨天青蛙_00049.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F608205F92B6002CB344 /* 雨天青蛙_00049.png */; };
+		F2E3F663205F92B6002CB344 /* 雨天青蛙_00048.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F609205F92B6002CB344 /* 雨天青蛙_00048.png */; };
+		F2E3F664205F92B6002CB344 /* 雨天青蛙_00060.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60A205F92B6002CB344 /* 雨天青蛙_00060.png */; };
+		F2E3F665205F92B6002CB344 /* 雨天青蛙_00074.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60B205F92B6002CB344 /* 雨天青蛙_00074.png */; };
+		F2E3F666205F92B6002CB344 /* 雨天青蛙_00079.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60C205F92B6002CB344 /* 雨天青蛙_00079.png */; };
+		F2E3F667205F92B6002CB344 /* 雨天青蛙_00051.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60D205F92B6002CB344 /* 雨天青蛙_00051.png */; };
+		F2E3F668205F92B6002CB344 /* 雨天青蛙_00045.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60E205F92B6002CB344 /* 雨天青蛙_00045.png */; };
+		F2E3F669205F92B6002CB344 /* 雨天青蛙_00086.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F60F205F92B6002CB344 /* 雨天青蛙_00086.png */; };
+		F2E3F66A205F92B6002CB344 /* 雨天青蛙_00087.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F610205F92B6002CB344 /* 雨天青蛙_00087.png */; };
+		F2E3F66B205F92B6002CB344 /* 雨天青蛙_00044.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F611205F92B6002CB344 /* 雨天青蛙_00044.png */; };
+		F2E3F66C205F92B6002CB344 /* 雨天青蛙_00050.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F612205F92B6002CB344 /* 雨天青蛙_00050.png */; };
+		F2E3F66D205F92B6002CB344 /* 雨天青蛙_00078.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F613205F92B6002CB344 /* 雨天青蛙_00078.png */; };
+		F2E3F66E205F92B6002CB344 /* 雨天青蛙_00046.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F614205F92B6002CB344 /* 雨天青蛙_00046.png */; };
+		F2E3F66F205F92B6002CB344 /* 雨天青蛙_00052.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F615205F92B6002CB344 /* 雨天青蛙_00052.png */; };
+		F2E3F670205F92B6002CB344 /* 雨天青蛙_00085.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F616205F92B6002CB344 /* 雨天青蛙_00085.png */; };
+		F2E3F671205F92B6002CB344 /* 雨天青蛙_00084.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F617205F92B6002CB344 /* 雨天青蛙_00084.png */; };
+		F2E3F672205F92B6002CB344 /* 雨天青蛙_00053.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F618205F92B6002CB344 /* 雨天青蛙_00053.png */; };
+		F2E3F673205F92B6002CB344 /* 雨天青蛙_00047.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F619205F92B6002CB344 /* 雨天青蛙_00047.png */; };
+		F2E3F674205F92B6002CB344 /* 雨天青蛙_00043.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61A205F92B6002CB344 /* 雨天青蛙_00043.png */; };
+		F2E3F675205F92B6002CB344 /* 雨天青蛙_00057.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61B205F92B6002CB344 /* 雨天青蛙_00057.png */; };
+		F2E3F676205F92B6002CB344 /* 雨天青蛙_00080.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61C205F92B6002CB344 /* 雨天青蛙_00080.png */; };
+		F2E3F677205F92B6002CB344 /* 雨天青蛙_00081.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61D205F92B6002CB344 /* 雨天青蛙_00081.png */; };
+		F2E3F678205F92B6002CB344 /* 雨天青蛙_00056.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61E205F92B6002CB344 /* 雨天青蛙_00056.png */; };
+		F2E3F679205F92B6002CB344 /* 雨天青蛙_00042.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F61F205F92B6002CB344 /* 雨天青蛙_00042.png */; };
+		F2E3F67A205F92B6002CB344 /* 雨天青蛙_00054.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F620205F92B6002CB344 /* 雨天青蛙_00054.png */; };
+		F2E3F67B205F92B6002CB344 /* 雨天青蛙_00040.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F621205F92B6002CB344 /* 雨天青蛙_00040.png */; };
+		F2E3F67C205F92B6002CB344 /* 雨天青蛙_00068.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F622205F92B6002CB344 /* 雨天青蛙_00068.png */; };
+		F2E3F67D205F92B6002CB344 /* 雨天青蛙_00083.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F623205F92B6002CB344 /* 雨天青蛙_00083.png */; };
+		F2E3F67E205F92B6002CB344 /* 雨天青蛙_00082.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F624205F92B6002CB344 /* 雨天青蛙_00082.png */; };
+		F2E3F67F205F92B6002CB344 /* 雨天青蛙_00069.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F625205F92B6002CB344 /* 雨天青蛙_00069.png */; };
+		F2E3F680205F92B6002CB344 /* 雨天青蛙_00041.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F626205F92B6002CB344 /* 雨天青蛙_00041.png */; };
+		F2E3F681205F92B6002CB344 /* 雨天青蛙_00055.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F627205F92B6002CB344 /* 雨天青蛙_00055.png */; };
+		F2E3F682205F92B6002CB344 /* 雨天青蛙_00032.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F628205F92B6002CB344 /* 雨天青蛙_00032.png */; };
+		F2E3F683205F92B6002CB344 /* 雨天青蛙_00026.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F629205F92B6002CB344 /* 雨天青蛙_00026.png */; };
+		F2E3F684205F92B6002CB344 /* 雨天青蛙_00027.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62A205F92B6002CB344 /* 雨天青蛙_00027.png */; };
+		F2E3F685205F92B6002CB344 /* 雨天青蛙_00033.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62B205F92B6002CB344 /* 雨天青蛙_00033.png */; };
+		F2E3F686205F92B6002CB344 /* 雨天青蛙_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62C205F92B6002CB344 /* 雨天青蛙_00019.png */; };
+		F2E3F687205F92B6002CB344 /* 雨天青蛙_00025.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62D205F92B6002CB344 /* 雨天青蛙_00025.png */; };
+		F2E3F688205F92B6002CB344 /* 雨天青蛙_00031.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62E205F92B6002CB344 /* 雨天青蛙_00031.png */; };
+		F2E3F689205F92B6002CB344 /* 雨天青蛙_00030.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F62F205F92B6002CB344 /* 雨天青蛙_00030.png */; };
+		F2E3F68A205F92B6002CB344 /* 雨天青蛙_00024.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F630205F92B6002CB344 /* 雨天青蛙_00024.png */; };
+		F2E3F68B205F92B6002CB344 /* 雨天青蛙_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F631205F92B6002CB344 /* 雨天青蛙_00018.png */; };
+		F2E3F68C205F92B6002CB344 /* 雨天青蛙_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F632205F92B6002CB344 /* 雨天青蛙_00020.png */; };
+		F2E3F68D205F92B6002CB344 /* 雨天青蛙_00034.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F633205F92B6002CB344 /* 雨天青蛙_00034.png */; };
+		F2E3F68E205F92B6002CB344 /* 雨天青蛙_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F634205F92B6002CB344 /* 雨天青蛙_00008.png */; };
+		F2E3F68F205F92B6002CB344 /* 雨天青蛙_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F635205F92B6002CB344 /* 雨天青蛙_00009.png */; };
+		F2E3F690205F92B6002CB344 /* 雨天青蛙_00035.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F636205F92B6002CB344 /* 雨天青蛙_00035.png */; };
+		F2E3F691205F92B6002CB344 /* 雨天青蛙_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F637205F92B6002CB344 /* 雨天青蛙_00021.png */; };
+		F2E3F692205F92B6002CB344 /* 雨天青蛙_00037.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F638205F92B6002CB344 /* 雨天青蛙_00037.png */; };
+		F2E3F693205F92B6002CB344 /* 雨天青蛙_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F639205F92B6002CB344 /* 雨天青蛙_00023.png */; };
+		F2E3F694205F92B6002CB344 /* 雨天青蛙_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F63A205F92B6002CB344 /* 雨天青蛙_00022.png */; };
+		F2E3F695205F92B6002CB344 /* 雨天青蛙_00036.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F63B205F92B6002CB344 /* 雨天青蛙_00036.png */; };
+		F2E3F697205F9337002CB344 /* AlphaBlend_Normal.frag in Resources */ = {isa = PBXBuildFile; fileRef = F2E3F696205F9337002CB344 /* AlphaBlend_Normal.frag */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B4D3998E43073165D0FDCEB /* Pods-WaterMarkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMarkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterMarkExample/Pods-WaterMarkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		790E7B1CAA880AB6C6419A1F /* Pods-WaterMarkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMarkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterMarkExample/Pods-WaterMarkExample.release.xcconfig"; sourceTree = "<group>"; };
+		ED62A902ED04018A700A9DB1 /* libPods-WaterMarkExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterMarkExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E3F5BC205F6F6E002CB344 /* WaterMarkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMarkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E3F5BF205F6F6E002CB344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2E3F5C0205F6F6E002CB344 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2E3F5C2205F6F6E002CB344 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2E3F5C3205F6F6E002CB344 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2E3F5C6205F6F6E002CB344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2E3F5C8205F6F6E002CB344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2E3F5CB205F6F6E002CB344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2E3F5CD205F6F6E002CB344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E3F5CE205F6F6E002CB344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2E3F5D5205F71C7002CB344 /* WatermarkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatermarkEngine.h; sourceTree = "<group>"; };
+		F2E3F5D6205F71C8002CB344 /* WatermarkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatermarkEngine.m; sourceTree = "<group>"; };
+		F2E3F5D8205F75B2002CB344 /* inputResources.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = inputResources.mp4; sourceTree = "<group>"; };
+		F2E3F5DA205F8A3D002CB344 /* 青蛙.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "青蛙.json"; sourceTree = "<group>"; };
+		F2E3F5DC205F8CEC002CB344 /* 雪人完成_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "雪人完成_1.gif"; sourceTree = "<group>"; };
+		F2E3F5DE205F8EEC002CB344 /* 测试zhouzhou.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "测试zhouzhou.mp4"; sourceTree = "<group>"; };
+		F2E3F5E2205F92B5002CB344 /* 雨天青蛙_00013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00013.png"; sourceTree = "<group>"; };
+		F2E3F5E3205F92B5002CB344 /* 雨天青蛙_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00007.png"; sourceTree = "<group>"; };
+		F2E3F5E4205F92B5002CB344 /* 雨天青蛙_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00006.png"; sourceTree = "<group>"; };
+		F2E3F5E5205F92B5002CB344 /* 雨天青蛙_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00012.png"; sourceTree = "<group>"; };
+		F2E3F5E6205F92B5002CB344 /* 雨天青蛙_00038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00038.png"; sourceTree = "<group>"; };
+		F2E3F5E7205F92B5002CB344 /* 雨天青蛙_00004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00004.png"; sourceTree = "<group>"; };
+		F2E3F5E8205F92B5002CB344 /* 雨天青蛙_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00010.png"; sourceTree = "<group>"; };
+		F2E3F5E9205F92B5002CB344 /* 雨天青蛙_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00011.png"; sourceTree = "<group>"; };
+		F2E3F5EA205F92B5002CB344 /* 雨天青蛙_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00005.png"; sourceTree = "<group>"; };
+		F2E3F5EB205F92B5002CB344 /* 雨天青蛙_00039.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00039.png"; sourceTree = "<group>"; };
+		F2E3F5EC205F92B5002CB344 /* 雨天青蛙_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00001.png"; sourceTree = "<group>"; };
+		F2E3F5ED205F92B5002CB344 /* 雨天青蛙_00015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00015.png"; sourceTree = "<group>"; };
+		F2E3F5EE205F92B5002CB344 /* 雨天青蛙_00029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00029.png"; sourceTree = "<group>"; };
+		F2E3F5EF205F92B5002CB344 /* 雨天青蛙_00028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00028.png"; sourceTree = "<group>"; };
+		F2E3F5F0205F92B5002CB344 /* 雨天青蛙_00014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00014.png"; sourceTree = "<group>"; };
+		F2E3F5F1205F92B5002CB344 /* 雨天青蛙_00000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00000.png"; sourceTree = "<group>"; };
+		F2E3F5F2205F92B5002CB344 /* 雨天青蛙_00016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00016.png"; sourceTree = "<group>"; };
+		F2E3F5F3205F92B5002CB344 /* 雨天青蛙_00002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00002.png"; sourceTree = "<group>"; };
+		F2E3F5F4205F92B5002CB344 /* 雨天青蛙_00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00003.png"; sourceTree = "<group>"; };
+		F2E3F5F5205F92B5002CB344 /* 雨天青蛙_00017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00017.png"; sourceTree = "<group>"; };
+		F2E3F5F6205F92B5002CB344 /* 雨天青蛙_00058.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00058.png"; sourceTree = "<group>"; };
+		F2E3F5F7205F92B5002CB344 /* 雨天青蛙_00070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00070.png"; sourceTree = "<group>"; };
+		F2E3F5F8205F92B5002CB344 /* 雨天青蛙_00064.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00064.png"; sourceTree = "<group>"; };
+		F2E3F5F9205F92B5002CB344 /* 雨天青蛙_00065.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00065.png"; sourceTree = "<group>"; };
+		F2E3F5FA205F92B5002CB344 /* 雨天青蛙_00071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00071.png"; sourceTree = "<group>"; };
+		F2E3F5FB205F92B5002CB344 /* 雨天青蛙_00059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00059.png"; sourceTree = "<group>"; };
+		F2E3F5FC205F92B6002CB344 /* 雨天青蛙_00067.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00067.png"; sourceTree = "<group>"; };
+		F2E3F5FD205F92B6002CB344 /* 雨天青蛙_00073.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00073.png"; sourceTree = "<group>"; };
+		F2E3F5FE205F92B6002CB344 /* 雨天青蛙_00072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00072.png"; sourceTree = "<group>"; };
+		F2E3F5FF205F92B6002CB344 /* 雨天青蛙_00066.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00066.png"; sourceTree = "<group>"; };
+		F2E3F600205F92B6002CB344 /* 雨天青蛙_00062.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00062.png"; sourceTree = "<group>"; };
+		F2E3F601205F92B6002CB344 /* 雨天青蛙_00076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00076.png"; sourceTree = "<group>"; };
+		F2E3F602205F92B6002CB344 /* 雨天青蛙_00089.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00089.png"; sourceTree = "<group>"; };
+		F2E3F603205F92B6002CB344 /* 雨天青蛙_00088.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00088.png"; sourceTree = "<group>"; };
+		F2E3F604205F92B6002CB344 /* 雨天青蛙_00077.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00077.png"; sourceTree = "<group>"; };
+		F2E3F605205F92B6002CB344 /* 雨天青蛙_00063.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00063.png"; sourceTree = "<group>"; };
+		F2E3F606205F92B6002CB344 /* 雨天青蛙_00075.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00075.png"; sourceTree = "<group>"; };
+		F2E3F607205F92B6002CB344 /* 雨天青蛙_00061.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00061.png"; sourceTree = "<group>"; };
+		F2E3F608205F92B6002CB344 /* 雨天青蛙_00049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00049.png"; sourceTree = "<group>"; };
+		F2E3F609205F92B6002CB344 /* 雨天青蛙_00048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00048.png"; sourceTree = "<group>"; };
+		F2E3F60A205F92B6002CB344 /* 雨天青蛙_00060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00060.png"; sourceTree = "<group>"; };
+		F2E3F60B205F92B6002CB344 /* 雨天青蛙_00074.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00074.png"; sourceTree = "<group>"; };
+		F2E3F60C205F92B6002CB344 /* 雨天青蛙_00079.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00079.png"; sourceTree = "<group>"; };
+		F2E3F60D205F92B6002CB344 /* 雨天青蛙_00051.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00051.png"; sourceTree = "<group>"; };
+		F2E3F60E205F92B6002CB344 /* 雨天青蛙_00045.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00045.png"; sourceTree = "<group>"; };
+		F2E3F60F205F92B6002CB344 /* 雨天青蛙_00086.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00086.png"; sourceTree = "<group>"; };
+		F2E3F610205F92B6002CB344 /* 雨天青蛙_00087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00087.png"; sourceTree = "<group>"; };
+		F2E3F611205F92B6002CB344 /* 雨天青蛙_00044.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00044.png"; sourceTree = "<group>"; };
+		F2E3F612205F92B6002CB344 /* 雨天青蛙_00050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00050.png"; sourceTree = "<group>"; };
+		F2E3F613205F92B6002CB344 /* 雨天青蛙_00078.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00078.png"; sourceTree = "<group>"; };
+		F2E3F614205F92B6002CB344 /* 雨天青蛙_00046.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00046.png"; sourceTree = "<group>"; };
+		F2E3F615205F92B6002CB344 /* 雨天青蛙_00052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00052.png"; sourceTree = "<group>"; };
+		F2E3F616205F92B6002CB344 /* 雨天青蛙_00085.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00085.png"; sourceTree = "<group>"; };
+		F2E3F617205F92B6002CB344 /* 雨天青蛙_00084.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00084.png"; sourceTree = "<group>"; };
+		F2E3F618205F92B6002CB344 /* 雨天青蛙_00053.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00053.png"; sourceTree = "<group>"; };
+		F2E3F619205F92B6002CB344 /* 雨天青蛙_00047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00047.png"; sourceTree = "<group>"; };
+		F2E3F61A205F92B6002CB344 /* 雨天青蛙_00043.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00043.png"; sourceTree = "<group>"; };
+		F2E3F61B205F92B6002CB344 /* 雨天青蛙_00057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00057.png"; sourceTree = "<group>"; };
+		F2E3F61C205F92B6002CB344 /* 雨天青蛙_00080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00080.png"; sourceTree = "<group>"; };
+		F2E3F61D205F92B6002CB344 /* 雨天青蛙_00081.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00081.png"; sourceTree = "<group>"; };
+		F2E3F61E205F92B6002CB344 /* 雨天青蛙_00056.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00056.png"; sourceTree = "<group>"; };
+		F2E3F61F205F92B6002CB344 /* 雨天青蛙_00042.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00042.png"; sourceTree = "<group>"; };
+		F2E3F620205F92B6002CB344 /* 雨天青蛙_00054.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00054.png"; sourceTree = "<group>"; };
+		F2E3F621205F92B6002CB344 /* 雨天青蛙_00040.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00040.png"; sourceTree = "<group>"; };
+		F2E3F622205F92B6002CB344 /* 雨天青蛙_00068.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00068.png"; sourceTree = "<group>"; };
+		F2E3F623205F92B6002CB344 /* 雨天青蛙_00083.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00083.png"; sourceTree = "<group>"; };
+		F2E3F624205F92B6002CB344 /* 雨天青蛙_00082.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00082.png"; sourceTree = "<group>"; };
+		F2E3F625205F92B6002CB344 /* 雨天青蛙_00069.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00069.png"; sourceTree = "<group>"; };
+		F2E3F626205F92B6002CB344 /* 雨天青蛙_00041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00041.png"; sourceTree = "<group>"; };
+		F2E3F627205F92B6002CB344 /* 雨天青蛙_00055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00055.png"; sourceTree = "<group>"; };
+		F2E3F628205F92B6002CB344 /* 雨天青蛙_00032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00032.png"; sourceTree = "<group>"; };
+		F2E3F629205F92B6002CB344 /* 雨天青蛙_00026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00026.png"; sourceTree = "<group>"; };
+		F2E3F62A205F92B6002CB344 /* 雨天青蛙_00027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00027.png"; sourceTree = "<group>"; };
+		F2E3F62B205F92B6002CB344 /* 雨天青蛙_00033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00033.png"; sourceTree = "<group>"; };
+		F2E3F62C205F92B6002CB344 /* 雨天青蛙_00019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00019.png"; sourceTree = "<group>"; };
+		F2E3F62D205F92B6002CB344 /* 雨天青蛙_00025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00025.png"; sourceTree = "<group>"; };
+		F2E3F62E205F92B6002CB344 /* 雨天青蛙_00031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00031.png"; sourceTree = "<group>"; };
+		F2E3F62F205F92B6002CB344 /* 雨天青蛙_00030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00030.png"; sourceTree = "<group>"; };
+		F2E3F630205F92B6002CB344 /* 雨天青蛙_00024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00024.png"; sourceTree = "<group>"; };
+		F2E3F631205F92B6002CB344 /* 雨天青蛙_00018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00018.png"; sourceTree = "<group>"; };
+		F2E3F632205F92B6002CB344 /* 雨天青蛙_00020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00020.png"; sourceTree = "<group>"; };
+		F2E3F633205F92B6002CB344 /* 雨天青蛙_00034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00034.png"; sourceTree = "<group>"; };
+		F2E3F634205F92B6002CB344 /* 雨天青蛙_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00008.png"; sourceTree = "<group>"; };
+		F2E3F635205F92B6002CB344 /* 雨天青蛙_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00009.png"; sourceTree = "<group>"; };
+		F2E3F636205F92B6002CB344 /* 雨天青蛙_00035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00035.png"; sourceTree = "<group>"; };
+		F2E3F637205F92B6002CB344 /* 雨天青蛙_00021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00021.png"; sourceTree = "<group>"; };
+		F2E3F638205F92B6002CB344 /* 雨天青蛙_00037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00037.png"; sourceTree = "<group>"; };
+		F2E3F639205F92B6002CB344 /* 雨天青蛙_00023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00023.png"; sourceTree = "<group>"; };
+		F2E3F63A205F92B6002CB344 /* 雨天青蛙_00022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00022.png"; sourceTree = "<group>"; };
+		F2E3F63B205F92B6002CB344 /* 雨天青蛙_00036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨天青蛙_00036.png"; sourceTree = "<group>"; };
+		F2E3F696205F9337002CB344 /* AlphaBlend_Normal.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_Normal.frag; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2E3F5B9205F6F6E002CB344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F1D747723DA3CD0F89B91E /* libPods-WaterMarkExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB39B556068689E21B9E042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D3998E43073165D0FDCEB /* Pods-WaterMarkExample.debug.xcconfig */,
+				790E7B1CAA880AB6C6419A1F /* Pods-WaterMarkExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8BCE0A37151AF344F49122E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED62A902ED04018A700A9DB1 /* libPods-WaterMarkExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2E3F5B3205F6F6E002CB344 = {
+			isa = PBXGroup;
+			children = (
+				F2E3F5BE205F6F6E002CB344 /* WaterMarkExample */,
+				F2E3F5BD205F6F6E002CB344 /* Products */,
+				0EB39B556068689E21B9E042 /* Pods */,
+				C8BCE0A37151AF344F49122E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E3F5BD205F6F6E002CB344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3F5BC205F6F6E002CB344 /* WaterMarkExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2E3F5BE205F6F6E002CB344 /* WaterMarkExample */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3F5BF205F6F6E002CB344 /* AppDelegate.h */,
+				F2E3F5C0205F6F6E002CB344 /* AppDelegate.m */,
+				F2E3F5C2205F6F6E002CB344 /* ViewController.h */,
+				F2E3F5C3205F6F6E002CB344 /* ViewController.m */,
+				F2E3F5D5205F71C7002CB344 /* WatermarkEngine.h */,
+				F2E3F5D6205F71C8002CB344 /* WatermarkEngine.m */,
+				F2E3F5D8205F75B2002CB344 /* inputResources.mp4 */,
+				F2E3F5DA205F8A3D002CB344 /* 青蛙.json */,
+				F2E3F696205F9337002CB344 /* AlphaBlend_Normal.frag */,
+				F2E3F5DC205F8CEC002CB344 /* 雪人完成_1.gif */,
+				F2E3F5DE205F8EEC002CB344 /* 测试zhouzhou.mp4 */,
+				F2E3F5E1205F92B5002CB344 /* 雨天青蛙 */,
+				F2E3F5C5205F6F6E002CB344 /* Main.storyboard */,
+				F2E3F5C8205F6F6E002CB344 /* Assets.xcassets */,
+				F2E3F5CA205F6F6E002CB344 /* LaunchScreen.storyboard */,
+				F2E3F5CD205F6F6E002CB344 /* Info.plist */,
+				F2E3F5CE205F6F6E002CB344 /* main.m */,
+			);
+			path = WaterMarkExample;
+			sourceTree = "<group>";
+		};
+		F2E3F5E1205F92B5002CB344 /* 雨天青蛙 */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3F5E2205F92B5002CB344 /* 雨天青蛙_00013.png */,
+				F2E3F5E3205F92B5002CB344 /* 雨天青蛙_00007.png */,
+				F2E3F5E4205F92B5002CB344 /* 雨天青蛙_00006.png */,
+				F2E3F5E5205F92B5002CB344 /* 雨天青蛙_00012.png */,
+				F2E3F5E6205F92B5002CB344 /* 雨天青蛙_00038.png */,
+				F2E3F5E7205F92B5002CB344 /* 雨天青蛙_00004.png */,
+				F2E3F5E8205F92B5002CB344 /* 雨天青蛙_00010.png */,
+				F2E3F5E9205F92B5002CB344 /* 雨天青蛙_00011.png */,
+				F2E3F5EA205F92B5002CB344 /* 雨天青蛙_00005.png */,
+				F2E3F5EB205F92B5002CB344 /* 雨天青蛙_00039.png */,
+				F2E3F5EC205F92B5002CB344 /* 雨天青蛙_00001.png */,
+				F2E3F5ED205F92B5002CB344 /* 雨天青蛙_00015.png */,
+				F2E3F5EE205F92B5002CB344 /* 雨天青蛙_00029.png */,
+				F2E3F5EF205F92B5002CB344 /* 雨天青蛙_00028.png */,
+				F2E3F5F0205F92B5002CB344 /* 雨天青蛙_00014.png */,
+				F2E3F5F1205F92B5002CB344 /* 雨天青蛙_00000.png */,
+				F2E3F5F2205F92B5002CB344 /* 雨天青蛙_00016.png */,
+				F2E3F5F3205F92B5002CB344 /* 雨天青蛙_00002.png */,
+				F2E3F5F4205F92B5002CB344 /* 雨天青蛙_00003.png */,
+				F2E3F5F5205F92B5002CB344 /* 雨天青蛙_00017.png */,
+				F2E3F5F6205F92B5002CB344 /* 雨天青蛙_00058.png */,
+				F2E3F5F7205F92B5002CB344 /* 雨天青蛙_00070.png */,
+				F2E3F5F8205F92B5002CB344 /* 雨天青蛙_00064.png */,
+				F2E3F5F9205F92B5002CB344 /* 雨天青蛙_00065.png */,
+				F2E3F5FA205F92B5002CB344 /* 雨天青蛙_00071.png */,
+				F2E3F5FB205F92B5002CB344 /* 雨天青蛙_00059.png */,
+				F2E3F5FC205F92B6002CB344 /* 雨天青蛙_00067.png */,
+				F2E3F5FD205F92B6002CB344 /* 雨天青蛙_00073.png */,
+				F2E3F5FE205F92B6002CB344 /* 雨天青蛙_00072.png */,
+				F2E3F5FF205F92B6002CB344 /* 雨天青蛙_00066.png */,
+				F2E3F600205F92B6002CB344 /* 雨天青蛙_00062.png */,
+				F2E3F601205F92B6002CB344 /* 雨天青蛙_00076.png */,
+				F2E3F602205F92B6002CB344 /* 雨天青蛙_00089.png */,
+				F2E3F603205F92B6002CB344 /* 雨天青蛙_00088.png */,
+				F2E3F604205F92B6002CB344 /* 雨天青蛙_00077.png */,
+				F2E3F605205F92B6002CB344 /* 雨天青蛙_00063.png */,
+				F2E3F606205F92B6002CB344 /* 雨天青蛙_00075.png */,
+				F2E3F607205F92B6002CB344 /* 雨天青蛙_00061.png */,
+				F2E3F608205F92B6002CB344 /* 雨天青蛙_00049.png */,
+				F2E3F609205F92B6002CB344 /* 雨天青蛙_00048.png */,
+				F2E3F60A205F92B6002CB344 /* 雨天青蛙_00060.png */,
+				F2E3F60B205F92B6002CB344 /* 雨天青蛙_00074.png */,
+				F2E3F60C205F92B6002CB344 /* 雨天青蛙_00079.png */,
+				F2E3F60D205F92B6002CB344 /* 雨天青蛙_00051.png */,
+				F2E3F60E205F92B6002CB344 /* 雨天青蛙_00045.png */,
+				F2E3F60F205F92B6002CB344 /* 雨天青蛙_00086.png */,
+				F2E3F610205F92B6002CB344 /* 雨天青蛙_00087.png */,
+				F2E3F611205F92B6002CB344 /* 雨天青蛙_00044.png */,
+				F2E3F612205F92B6002CB344 /* 雨天青蛙_00050.png */,
+				F2E3F613205F92B6002CB344 /* 雨天青蛙_00078.png */,
+				F2E3F614205F92B6002CB344 /* 雨天青蛙_00046.png */,
+				F2E3F615205F92B6002CB344 /* 雨天青蛙_00052.png */,
+				F2E3F616205F92B6002CB344 /* 雨天青蛙_00085.png */,
+				F2E3F617205F92B6002CB344 /* 雨天青蛙_00084.png */,
+				F2E3F618205F92B6002CB344 /* 雨天青蛙_00053.png */,
+				F2E3F619205F92B6002CB344 /* 雨天青蛙_00047.png */,
+				F2E3F61A205F92B6002CB344 /* 雨天青蛙_00043.png */,
+				F2E3F61B205F92B6002CB344 /* 雨天青蛙_00057.png */,
+				F2E3F61C205F92B6002CB344 /* 雨天青蛙_00080.png */,
+				F2E3F61D205F92B6002CB344 /* 雨天青蛙_00081.png */,
+				F2E3F61E205F92B6002CB344 /* 雨天青蛙_00056.png */,
+				F2E3F61F205F92B6002CB344 /* 雨天青蛙_00042.png */,
+				F2E3F620205F92B6002CB344 /* 雨天青蛙_00054.png */,
+				F2E3F621205F92B6002CB344 /* 雨天青蛙_00040.png */,
+				F2E3F622205F92B6002CB344 /* 雨天青蛙_00068.png */,
+				F2E3F623205F92B6002CB344 /* 雨天青蛙_00083.png */,
+				F2E3F624205F92B6002CB344 /* 雨天青蛙_00082.png */,
+				F2E3F625205F92B6002CB344 /* 雨天青蛙_00069.png */,
+				F2E3F626205F92B6002CB344 /* 雨天青蛙_00041.png */,
+				F2E3F627205F92B6002CB344 /* 雨天青蛙_00055.png */,
+				F2E3F628205F92B6002CB344 /* 雨天青蛙_00032.png */,
+				F2E3F629205F92B6002CB344 /* 雨天青蛙_00026.png */,
+				F2E3F62A205F92B6002CB344 /* 雨天青蛙_00027.png */,
+				F2E3F62B205F92B6002CB344 /* 雨天青蛙_00033.png */,
+				F2E3F62C205F92B6002CB344 /* 雨天青蛙_00019.png */,
+				F2E3F62D205F92B6002CB344 /* 雨天青蛙_00025.png */,
+				F2E3F62E205F92B6002CB344 /* 雨天青蛙_00031.png */,
+				F2E3F62F205F92B6002CB344 /* 雨天青蛙_00030.png */,
+				F2E3F630205F92B6002CB344 /* 雨天青蛙_00024.png */,
+				F2E3F631205F92B6002CB344 /* 雨天青蛙_00018.png */,
+				F2E3F632205F92B6002CB344 /* 雨天青蛙_00020.png */,
+				F2E3F633205F92B6002CB344 /* 雨天青蛙_00034.png */,
+				F2E3F634205F92B6002CB344 /* 雨天青蛙_00008.png */,
+				F2E3F635205F92B6002CB344 /* 雨天青蛙_00009.png */,
+				F2E3F636205F92B6002CB344 /* 雨天青蛙_00035.png */,
+				F2E3F637205F92B6002CB344 /* 雨天青蛙_00021.png */,
+				F2E3F638205F92B6002CB344 /* 雨天青蛙_00037.png */,
+				F2E3F639205F92B6002CB344 /* 雨天青蛙_00023.png */,
+				F2E3F63A205F92B6002CB344 /* 雨天青蛙_00022.png */,
+				F2E3F63B205F92B6002CB344 /* 雨天青蛙_00036.png */,
+			);
+			path = "雨天青蛙";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2E3F5BB205F6F6E002CB344 /* WaterMarkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E3F5D2205F6F6E002CB344 /* Build configuration list for PBXNativeTarget "WaterMarkExample" */;
+			buildPhases = (
+				4B756FA223863EEE8411BF2F /* [CP] Check Pods Manifest.lock */,
+				F2E3F5B8205F6F6E002CB344 /* Sources */,
+				F2E3F5B9205F6F6E002CB344 /* Frameworks */,
+				F2E3F5BA205F6F6E002CB344 /* Resources */,
+				153B8718B4F59AB4EED7677B /* [CP] Embed Pods Frameworks */,
+				827BD40ECF19A3711586191E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMarkExample;
+			productName = WaterMarkExample;
+			productReference = F2E3F5BC205F6F6E002CB344 /* WaterMarkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2E3F5B4205F6F6E002CB344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.huyangyang.landscapePhotography;
+				TargetAttributes = {
+					F2E3F5BB205F6F6E002CB344 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2E3F5B7205F6F6E002CB344 /* Build configuration list for PBXProject "WaterMarkExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2E3F5B3205F6F6E002CB344;
+			productRefGroup = F2E3F5BD205F6F6E002CB344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2E3F5BB205F6F6E002CB344 /* WaterMarkExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2E3F5BA205F6F6E002CB344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E3F645205F92B6002CB344 /* 雨天青蛙_00039.png in Resources */,
+				F2E3F67A205F92B6002CB344 /* 雨天青蛙_00054.png in Resources */,
+				F2E3F64D205F92B6002CB344 /* 雨天青蛙_00002.png in Resources */,
+				F2E3F63C205F92B6002CB344 /* 雨天青蛙_00013.png in Resources */,
+				F2E3F678205F92B6002CB344 /* 雨天青蛙_00056.png in Resources */,
+				F2E3F697205F9337002CB344 /* AlphaBlend_Normal.frag in Resources */,
+				F2E3F665205F92B6002CB344 /* 雨天青蛙_00074.png in Resources */,
+				F2E3F686205F92B6002CB344 /* 雨天青蛙_00019.png in Resources */,
+				F2E3F659205F92B6002CB344 /* 雨天青蛙_00066.png in Resources */,
+				F2E3F65A205F92B6002CB344 /* 雨天青蛙_00062.png in Resources */,
+				F2E3F644205F92B6002CB344 /* 雨天青蛙_00005.png in Resources */,
+				F2E3F649205F92B6002CB344 /* 雨天青蛙_00028.png in Resources */,
+				F2E3F65B205F92B6002CB344 /* 雨天青蛙_00076.png in Resources */,
+				F2E3F690205F92B6002CB344 /* 雨天青蛙_00035.png in Resources */,
+				F2E3F673205F92B6002CB344 /* 雨天青蛙_00047.png in Resources */,
+				F2E3F63F205F92B6002CB344 /* 雨天青蛙_00012.png in Resources */,
+				F2E3F5D9205F75B3002CB344 /* inputResources.mp4 in Resources */,
+				F2E3F66D205F92B6002CB344 /* 雨天青蛙_00078.png in Resources */,
+				F2E3F68E205F92B6002CB344 /* 雨天青蛙_00008.png in Resources */,
+				F2E3F66E205F92B6002CB344 /* 雨天青蛙_00046.png in Resources */,
+				F2E3F66B205F92B6002CB344 /* 雨天青蛙_00044.png in Resources */,
+				F2E3F5CC205F6F6E002CB344 /* LaunchScreen.storyboard in Resources */,
+				F2E3F67B205F92B6002CB344 /* 雨天青蛙_00040.png in Resources */,
+				F2E3F655205F92B6002CB344 /* 雨天青蛙_00059.png in Resources */,
+				F2E3F65E205F92B6002CB344 /* 雨天青蛙_00077.png in Resources */,
+				F2E3F684205F92B6002CB344 /* 雨天青蛙_00027.png in Resources */,
+				F2E3F647205F92B6002CB344 /* 雨天青蛙_00015.png in Resources */,
+				F2E3F674205F92B6002CB344 /* 雨天青蛙_00043.png in Resources */,
+				F2E3F67D205F92B6002CB344 /* 雨天青蛙_00083.png in Resources */,
+				F2E3F5DF205F8EEC002CB344 /* 测试zhouzhou.mp4 in Resources */,
+				F2E3F675205F92B6002CB344 /* 雨天青蛙_00057.png in Resources */,
+				F2E3F66C205F92B6002CB344 /* 雨天青蛙_00050.png in Resources */,
+				F2E3F669205F92B6002CB344 /* 雨天青蛙_00086.png in Resources */,
+				F2E3F670205F92B6002CB344 /* 雨天青蛙_00085.png in Resources */,
+				F2E3F5C9205F6F6E002CB344 /* Assets.xcassets in Resources */,
+				F2E3F688205F92B6002CB344 /* 雨天青蛙_00031.png in Resources */,
+				F2E3F643205F92B6002CB344 /* 雨天青蛙_00011.png in Resources */,
+				F2E3F651205F92B6002CB344 /* 雨天青蛙_00070.png in Resources */,
+				F2E3F664205F92B6002CB344 /* 雨天青蛙_00060.png in Resources */,
+				F2E3F641205F92B6002CB344 /* 雨天青蛙_00004.png in Resources */,
+				F2E3F687205F92B6002CB344 /* 雨天青蛙_00025.png in Resources */,
+				F2E3F653205F92B6002CB344 /* 雨天青蛙_00065.png in Resources */,
+				F2E3F685205F92B6002CB344 /* 雨天青蛙_00033.png in Resources */,
+				F2E3F667205F92B6002CB344 /* 雨天青蛙_00051.png in Resources */,
+				F2E3F68B205F92B6002CB344 /* 雨天青蛙_00018.png in Resources */,
+				F2E3F689205F92B6002CB344 /* 雨天青蛙_00030.png in Resources */,
+				F2E3F650205F92B6002CB344 /* 雨天青蛙_00058.png in Resources */,
+				F2E3F662205F92B6002CB344 /* 雨天青蛙_00049.png in Resources */,
+				F2E3F671205F92B6002CB344 /* 雨天青蛙_00084.png in Resources */,
+				F2E3F694205F92B6002CB344 /* 雨天青蛙_00022.png in Resources */,
+				F2E3F648205F92B6002CB344 /* 雨天青蛙_00029.png in Resources */,
+				F2E3F65C205F92B6002CB344 /* 雨天青蛙_00089.png in Resources */,
+				F2E3F64B205F92B6002CB344 /* 雨天青蛙_00000.png in Resources */,
+				F2E3F64F205F92B6002CB344 /* 雨天青蛙_00017.png in Resources */,
+				F2E3F692205F92B6002CB344 /* 雨天青蛙_00037.png in Resources */,
+				F2E3F65F205F92B6002CB344 /* 雨天青蛙_00063.png in Resources */,
+				F2E3F66A205F92B6002CB344 /* 雨天青蛙_00087.png in Resources */,
+				F2E3F661205F92B6002CB344 /* 雨天青蛙_00061.png in Resources */,
+				F2E3F681205F92B6002CB344 /* 雨天青蛙_00055.png in Resources */,
+				F2E3F677205F92B6002CB344 /* 雨天青蛙_00081.png in Resources */,
+				F2E3F63D205F92B6002CB344 /* 雨天青蛙_00007.png in Resources */,
+				F2E3F682205F92B6002CB344 /* 雨天青蛙_00032.png in Resources */,
+				F2E3F657205F92B6002CB344 /* 雨天青蛙_00073.png in Resources */,
+				F2E3F663205F92B6002CB344 /* 雨天青蛙_00048.png in Resources */,
+				F2E3F654205F92B6002CB344 /* 雨天青蛙_00071.png in Resources */,
+				F2E3F646205F92B6002CB344 /* 雨天青蛙_00001.png in Resources */,
+				F2E3F64E205F92B6002CB344 /* 雨天青蛙_00003.png in Resources */,
+				F2E3F680205F92B6002CB344 /* 雨天青蛙_00041.png in Resources */,
+				F2E3F666205F92B6002CB344 /* 雨天青蛙_00079.png in Resources */,
+				F2E3F64A205F92B6002CB344 /* 雨天青蛙_00014.png in Resources */,
+				F2E3F68D205F92B6002CB344 /* 雨天青蛙_00034.png in Resources */,
+				F2E3F640205F92B6002CB344 /* 雨天青蛙_00038.png in Resources */,
+				F2E3F63E205F92B6002CB344 /* 雨天青蛙_00006.png in Resources */,
+				F2E3F64C205F92B6002CB344 /* 雨天青蛙_00016.png in Resources */,
+				F2E3F658205F92B6002CB344 /* 雨天青蛙_00072.png in Resources */,
+				F2E3F67C205F92B6002CB344 /* 雨天青蛙_00068.png in Resources */,
+				F2E3F68C205F92B6002CB344 /* 雨天青蛙_00020.png in Resources */,
+				F2E3F660205F92B6002CB344 /* 雨天青蛙_00075.png in Resources */,
+				F2E3F693205F92B6002CB344 /* 雨天青蛙_00023.png in Resources */,
+				F2E3F5C7205F6F6E002CB344 /* Main.storyboard in Resources */,
+				F2E3F656205F92B6002CB344 /* 雨天青蛙_00067.png in Resources */,
+				F2E3F652205F92B6002CB344 /* 雨天青蛙_00064.png in Resources */,
+				F2E3F66F205F92B6002CB344 /* 雨天青蛙_00052.png in Resources */,
+				F2E3F672205F92B6002CB344 /* 雨天青蛙_00053.png in Resources */,
+				F2E3F67F205F92B6002CB344 /* 雨天青蛙_00069.png in Resources */,
+				F2E3F679205F92B6002CB344 /* 雨天青蛙_00042.png in Resources */,
+				F2E3F68F205F92B6002CB344 /* 雨天青蛙_00009.png in Resources */,
+				F2E3F5DD205F8CEC002CB344 /* 雪人完成_1.gif in Resources */,
+				F2E3F68A205F92B6002CB344 /* 雨天青蛙_00024.png in Resources */,
+				F2E3F691205F92B6002CB344 /* 雨天青蛙_00021.png in Resources */,
+				F2E3F67E205F92B6002CB344 /* 雨天青蛙_00082.png in Resources */,
+				F2E3F65D205F92B6002CB344 /* 雨天青蛙_00088.png in Resources */,
+				F2E3F695205F92B6002CB344 /* 雨天青蛙_00036.png in Resources */,
+				F2E3F676205F92B6002CB344 /* 雨天青蛙_00080.png in Resources */,
+				F2E3F668205F92B6002CB344 /* 雨天青蛙_00045.png in Resources */,
+				F2E3F5DB205F8A3D002CB344 /* 青蛙.json in Resources */,
+				F2E3F642205F92B6002CB344 /* 雨天青蛙_00010.png in Resources */,
+				F2E3F683205F92B6002CB344 /* 雨天青蛙_00026.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		153B8718B4F59AB4EED7677B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterMarkExample/Pods-WaterMarkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B756FA223863EEE8411BF2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterMarkExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		827BD40ECF19A3711586191E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WaterMarkExample/Pods-WaterMarkExample-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterMarkExample/Pods-WaterMarkExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2E3F5B8205F6F6E002CB344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E3F5D7205F71C8002CB344 /* WatermarkEngine.m in Sources */,
+				F2E3F5C4205F6F6E002CB344 /* ViewController.m in Sources */,
+				F2E3F5CF205F6F6E002CB344 /* main.m in Sources */,
+				F2E3F5C1205F6F6E002CB344 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2E3F5C5205F6F6E002CB344 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E3F5C6205F6F6E002CB344 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2E3F5CA205F6F6E002CB344 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E3F5CB205F6F6E002CB344 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2E3F5D0205F6F6E002CB344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2E3F5D1205F6F6E002CB344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2E3F5D3205F6F6E002CB344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4D3998E43073165D0FDCEB /* Pods-WaterMarkExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DASH6JFSDW;
+				INFOPLIST_FILE = WaterMarkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuYangYang.WaterMarkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2E3F5D4205F6F6E002CB344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790E7B1CAA880AB6C6419A1F /* Pods-WaterMarkExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DASH6JFSDW;
+				INFOPLIST_FILE = WaterMarkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuYangYang.WaterMarkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2E3F5B7205F6F6E002CB344 /* Build configuration list for PBXProject "WaterMarkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E3F5D0205F6F6E002CB344 /* Debug */,
+				F2E3F5D1205F6F6E002CB344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E3F5D2205F6F6E002CB344 /* Build configuration list for PBXNativeTarget "WaterMarkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E3F5D3205F6F6E002CB344 /* Debug */,
+				F2E3F5D4205F6F6E002CB344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2E3F5B4205F6F6E002CB344 /* Project object */;
+}

@@ -1,0 +1,27 @@
+PODS:
+  - GPUImage (0.1.7)
+  - lottie-ios (2.0.6)
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - GPUImage (from `https://github.com/BradLarson/GPUImage`)
+  - lottie-ios (~> 2.0.5)
+  - MBProgressHUD
+
+EXTERNAL SOURCES:
+  GPUImage:
+    :git: https://github.com/BradLarson/GPUImage
+
+CHECKOUT OPTIONS:
+  GPUImage:
+    :commit: 167b0389bc6e9dc4bb0121550f91d8d5d6412c53
+    :git: https://github.com/BradLarson/GPUImage
+
+SPEC CHECKSUMS:
+  GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
+  lottie-ios: 601c75ad9b5f27857f6221c5e7f4a12d23f5e779
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+
+PODFILE CHECKSUM: 521a3883bf9ae9e898a3e9474b95b38840a9caa0
+
+COCOAPODS: 1.4.0
